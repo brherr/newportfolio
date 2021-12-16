@@ -4846,19 +4846,19 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/0xfolio/img/bg/header-bg-sm.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/bg/header-bg-sm.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
   @media (min-resolution: 192dpi) {
     .header {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/0xfolio/img/bg/header-bg-md.jpg"); } }
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/bg/header-bg-md.jpg"); } }
   @media only screen and (min-width: 100em) {
     .header {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/0xfolio/img/bg/header-bg-md.jpg"); } }
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/bg/header-bg-md.jpg"); } }
   @media only screen and (min-width: 120em) {
     .header {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/0xfolio/img/bg/header-bg-lg.jpg"); } }
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/bg/header-bg-lg.jpg"); } }
   .header__content {
     display: flex;
     flex-direction: column;
@@ -4870,14 +4870,15 @@ p {
       .header__img-box {
         margin: -2.5rem 0 0.625rem; } }
   .header__img {
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     height: 7.5rem;
     width: 7.5rem;
-    border-radius: 50%; }
+    border-radius: 50%;
+  object-fit: cover; }
     @media (min-width: 576px) {
       .header__img {
         height: 9.375rem;
-        width: 9.375rem; } }
+        width: 9.375rem;
+      object-fit: cover; } }
   .header__social-icons {
     position: absolute;
     bottom: 0.625rem;
@@ -5158,7 +5159,9 @@ section {
 
 .about__skills-icons {
   line-height: 1.7;
-  padding: 0 0.625rem; }
+  padding: 0 0.625rem;
+  align-items: center; 
+}
 
 .about__skills-icon {
   height: 1.375rem;
@@ -5169,6 +5172,14 @@ section {
       height: 1.625rem;
       width: 1.625rem;
       margin-right: 0.4375rem; } }
+
+ 
+
+ .devicons {
+   font-size: 3rem;
+   padding: .9rem;
+ }
+ 
 
 .work {
   background-color: #f1f1f1; }
